@@ -1,0 +1,145 @@
+.hero-wrapper {
+    position: relative;
+    padding-top: 5rem; 
+    overflow: hidden; 
+}
+
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+}
+
+
+.hero-left {
+    flex: 1; 
+    padding-right: 2rem;
+}
+
+.hero-title h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+    color: black;
+    line-height: 1.2;
+}
+
+.hero-des h3 {
+    font-size: 1.1rem;
+    padding-bottom: 1.5rem;
+    color: grey;
+    font-weight: 400;
+}
+
+
+.Button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    max-width: 200px;
+}
+
+.Button:hover {
+    background-color: darkorange;
+}
+
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+
+.hero-wrapper::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: -150px;
+    width: 650px;
+    height: 650px;
+    background-color: #FFA500;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+
+@media (max-width: 1024px) {
+    .hero-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 3rem 1rem;
+    }
+
+    .hero-left {
+        padding-right: 0;
+    }
+
+    .hero-title h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-des h3 {
+        font-size: 1rem;
+    }
+
+    .Button {
+        margin: auto;
+        font-size: 1rem;
+    }
+
+    .image-container img {
+        max-width: 500px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hero-container {
+        padding: 2rem 1rem;
+    }
+
+    .hero-title h1 {
+        font-size: 2rem;
+    }
+
+    .hero-des h3 {
+        font-size: 0.9rem;
+    }
+
+    .Button {
+        font-size: 0.9rem;
+        padding: 0.7rem 1.2rem;
+    }
+
+    .image-container img {
+        max-width: 350px;
+    }
+
+    .hero-wrapper::before {
+        width: 400px;
+        height: 400px;
+        top: -30px;
+        right: -100px;
+    }
+}

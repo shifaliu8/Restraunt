@@ -1,0 +1,119 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:transparent;
+    z-index: 1000;
+    /*box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);*/
+    padding: 1rem 2rem;
+}
+
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.logo {
+    width: 100px;
+    background-color: white;
+}
+
+
+.menu {
+    display: flex;
+    gap: 2rem;
+    align-items: center; 
+}
+
+
+.menu a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: darkorange;
+    
+}
+
+
+.button {
+    font-weight: 500;
+    padding: 0.8rem 1.2rem;
+    background-color:  darkorange;
+    color:white;
+    border: none;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color:white ;
+    color: black;
+}
+
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1024px) {
+    .navbar-container {
+        padding: 1rem 1.5rem;
+    }
+    
+    .menu {
+        gap: 1.5rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: white;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    
+    .menu.active {
+        display: flex;
+    }
+
+    .menu a {
+        padding: 10px;
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+   
+    .menu-button {
+        width: 90%;
+        margin-top: 10px;
+        text-align: center;
+    }
+}

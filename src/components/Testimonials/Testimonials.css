@@ -1,0 +1,79 @@
+.t-wrapper{
+    padding: 4rem;
+    position: relative;
+
+}
+.t-des p{
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+.t-title p{
+    font-size:1.9rem;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.t-heading h1{
+    font-size:2.5rem;
+    font-weight: 600rem;
+    align-items: center;
+    padding: 1rem;
+
+}
+.t-card h3{
+    font-size:1.3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+
+}
+.t-card p{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+
+}
+.t-card {
+    background-color: #F6F6F6;
+    padding: 2rem; 
+    border-radius: 15px;
+    width: 550px;
+    height: auto; 
+    text-align: center; 
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.t-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.t-cards {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+   
+    margin-top: 40px; 
+    
+}
+.t-card>img{
+    justify-content: center; 
+    align-items: center; 
+    padding-bottom: 1rem;
+}
+.stars{
+    padding:1rem;
+    color: gold;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    gap:1rem;
+}
